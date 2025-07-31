@@ -1,0 +1,251 @@
+/* Reset and base styles for the landing page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; 
+  background: #fafcfd;                       
+  color: #223;                              
+  margin: 0;                               
+  padding: 0;                              
+}
+
+/* Container for the landing page content */
+.landing-container {
+  max-width: 600px;                        
+  margin: 2rem auto;                      
+  box-shadow: 0 2px 16px rgba(60,60,70,0.08); 
+  background: #fff;                       
+  border-radius: 1rem;                   
+  overflow: hidden;                     
+}
+
+/* HEADER and Navigation Styles */
+
+/* Main header container */
+.main-header {
+  position: relative;                     
+  text-align: center;                    
+  background: #e5f5ee;                   
+  padding-bottom: 2rem;                 
+}
+
+/* Background image inside header */
+.header-img {
+  width: 100%;                        
+  height: 180px;                     
+  object-fit: cover;                  
+  display: block;                     
+  border-top-left-radius: 1rem;      
+  border-top-right-radius: 1rem;
+}
+
+/* Dark overlay to improve text readability on header image */
+.header-overlay {
+  position: absolute;                
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 180px;                   
+  background: rgba(0, 0, 0, 0.45);   
+  border-top-left-radius: 1rem;      
+  border-top-right-radius: 1rem;
+  pointer-events: none;               
+  z-index: 1;                        
+}
+
+/* Navigation menu in header */
+.header-nav {
+  position: absolute;                
+  top: 16px;                       
+  right: 20px;                    
+  z-index: 11;                   
+}
+
+/* Navigation list styles */
+.header-nav ul {
+  list-style: none;                
+  margin: 0; 
+  padding: 0;
+  display: flex;                  
+  gap: 1.8rem;                   
+}
+
+/* Each navigation item */
+.header-nav ul li {
+  display: inline-block;         
+}
+
+/* Navigation links appearance */
+.header-nav ul li a {
+  color: #ecf0f1;             
+  text-decoration: none;          
+  font-weight: 600;              
+  font-size: 1rem;                 
+  transition: color 0.3s ease;   
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); 
+}
+
+/* Navigation links hover effect */
+.header-nav ul li a:hover {
+  color: #33b687;                 
+  text-decoration: underline;     
+  text-shadow: none;             
+}
+
+/* Text content over the image in header */
+.header-content {
+  position: relative;            
+  margin-top: -130px;           
+  color: #ecf0f1;               
+  padding: 0 1rem;         
+  z-index: 10;                 
+}
+
+/* Main heading style in header */
+.main-header h1 {
+  margin: 0.5em 0 0 0;          
+  font-size: 2.8em;          
+  letter-spacing: 2px;          
+  font-weight: 700;             
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); 
+}
+
+/* Subtitle under main heading */
+.subtitle {
+  color: #d0dfe1;             
+  margin: 0.3em 0 1em 0;         
+  font-size: 1.15em;         
+  font-weight: 500;             
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6); 
+}
+
+/* Call to Action button styling */
+.cta-btn {
+  display: inline-block;                       
+  margin-top: 1.4em;                            
+  padding: 0.95em 3em;                        
+  background: #183153;                      
+  color: #fff;                               
+  font-size: 1.25em;                         
+  font-weight: 600;                            
+  border-radius: 30px;                          
+  text-decoration: none;                        
+  box-shadow: 0 3px 10px rgba(46,125,50,0.4); 
+  transition: background 0.3s ease, box-shadow 0.3s ease; 
+  user-select: none;                            
+}
+
+/* Hover and focus styles for CTA button */
+.cta-btn:hover, .cta-btn:focus {
+  background: #33b687;                         
+  box-shadow: 0 6px 18px rgba(27,94,32,0.7);  
+  outline: none;                              
+}
+
+/* Sections About and FAQ */
+
+/* General section styling */
+section {
+  padding: 2rem 2rem 3rem 2rem;                 
+  border-top: 1px solid #f1f1f1;             
+  text-align: left;                           
+  color: #183153;                             
+}
+
+/* Section headings */
+section h2 {
+  color: #183153;                         
+  font-size: 1.8em;                          
+  margin-bottom: 0.7rem;                       
+  font-weight: 700;                           
+  letter-spacing: 1px;                         
+}
+
+/* Paragraphs inside the about section */
+.about p {
+  font-size: 1.1em;                           
+  line-height: 1.6;                             
+  margin-top: 0;
+  margin-bottom: 1.2rem;                       
+  color: #183153;                              
+}
+
+/* Span elements used for highlighting text */
+.highlight {
+  color: #183153;                            
+  font-weight: 600;                             
+}
+
+/* NEW key-features section */
+
+/* Container margin */
+.key-features {
+  margin-top: 1.5rem;                       
+}
+
+/* Heading for key-features */
+.key-features h3 {
+  color: #183153;                             
+  font-size: 1.5em;                            
+  margin-bottom: 0.8rem;                       
+  font-weight: 700;                             
+}
+
+/* List inside key-features */
+.key-features ul {
+  list-style-type: disc;                      
+  padding-left: 1.5rem;                        
+  color: #183153;                               
+  font-size: 1.05em;                        
+  line-height: 1.5;                             
+}
+
+/* List items spacing */
+.key-features ul li {
+  margin-bottom: 0.7rem;                     
+}
+
+/* FAQ Styling */
+
+/* List inside FAQ section */
+.faq ul {
+  padding-left: 1.2em;                          
+  list-style: disc inside;                      
+  font-size: 1em;                            
+  color: #183153;                            
+}
+
+/* FAQ list item spacing */
+.faq li {
+  margin-bottom: 0.85em;                   
+}
+
+/* Strong element inside FAQ for emphasis */
+.faq strong {
+  color: #183153;                        
+}
+
+/* Responsive Tweaks for small screens */
+@media (max-width: 640px) {
+  .landing-container {
+    margin: 1rem;                            
+    border-radius: 0.5rem;                   
+  }
+
+  .header-content h1 {
+    font-size: 2em;                         
+  }
+
+  .cta-btn {
+    font-size: 1.05em;                       
+    padding: 0.75em 2.5em;                     
+  }
+
+  .header-nav {
+    top: 12px;                             
+    right: 12px;
+  }
+
+  .header-nav ul {
+    gap: 1rem;                             
+  }
+}
+
