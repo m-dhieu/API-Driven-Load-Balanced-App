@@ -155,7 +155,7 @@ function searchJobs() {
   resultsDiv.innerHTML = '<p>Loading jobs...</p>';
 
   // Fetch jobs from backend API
-  fetch(BASE_URL + '/api/jobs?limit=50&offset=0')
+  fetch(BASE_URL + '/api/jobs/?limit=50&offset=0')
     .then(function(response) {
       if (!response.ok) {
         throw new Error('Server error: ' + response.statusText);
