@@ -11,8 +11,9 @@ def get_jobs(limit: int = Query(20, ge=1, le=50), offset: int = Query(0, ge=0)):
     Fetch jobs from external API with pagination.
     """
     try:
+        # Return just job list (use .get if API returns a dict)
         jobs = fetch_jobs(limit, offset)
-        return jobs
+        return {"jobs": jobs}
     except Exception as e:
         logger.error(f"Error fetching jobs: {e}")
         raise HTTPException(status_code=503, detail=f"Failed to fetch jobs from external API: {e}")
