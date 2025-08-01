@@ -2,6 +2,10 @@ import logging
 from fastapi import FastAPI
 from app.routers import jobs, cv_review, grammar_check, resources
 from fastapi.middleware.cors import CORSMiddleware
+from app.database import engine, metadata
+
+metadata.create_all(engine)
+
 
 logging.basicConfig(level=logging.INFO)
 

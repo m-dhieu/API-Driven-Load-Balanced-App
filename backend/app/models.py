@@ -1,5 +1,5 @@
 from sqlalchemy import Table, Column, Integer, String, Text
-from .database import metadata
+from app.database import engine, metadata, database
 
 jobs = Table(
     "jobs",
