@@ -7,6 +7,10 @@ from app.database import engine, metadata, database
 
 logging.basicConfig(level=logging.INFO)
 
+# Load .env file for env variables like RAPIDAPI_KEY
+from dotenv import load_dotenv
+load_dotenv()
+
 app = FastAPI(title="Job Tracker API")
 
 # Create all tables
