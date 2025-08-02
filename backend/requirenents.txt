@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+python-multipart
+python-docx
+PyPDF2
+databases[sqlite]
+aiosqlite
+sqlalchemy
+pydantic
